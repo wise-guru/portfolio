@@ -1,11 +1,54 @@
+:root {
+  --blue: rgb(26, 57)
+}
+
 body {
   margin: 0;
   padding: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out, color 0.6s ease-in-out;
+
+}
+
+body.light {
+  --background-color: white;
+  --text-color: black;
+}
+
+body.dark {
+  --background-color: black;
+  --text-color: #ffffff;
 }
 
 .App {
   display: flex;
   flex-direction: column;
+}
+
+/*Dark Mode */
+#darkMode {
+  /* background: transparent url("../moon.png") no-repeat center;
+  background-size: 30px 30px; */
+  width: 45px;
+  height: 45px;
+  filter: grayscale(100%);
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out  filter 0.3s ease-in-out;
+}
+
+#darkMode:hover
+/* #darkMode:focus  */
+{
+  filter: none;
+  /* background-color: black; */
+  cursor: pointer;
+}
+
+#darkMode.clicked {
+  filter: none !important;
+  background-color: black;
 }
 
 
@@ -24,4 +67,16 @@ body {
 
 .header li {
   list-style-type: none;
+}
+
+.header button {
+  border: none;
+}
+
+.header .moon {
+ background-color: #ffffff;
+}
+
+.header .sun {
+  background-color: #000000;
 }
