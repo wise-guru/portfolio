@@ -52,6 +52,54 @@ body.dark {
 }
 
 
+/* Shape divider */
+.custom-shape-divider-top-1665363425 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1665363425 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1665363425 .shape-fill {
+  fill: #C7F9CC;
+}
+
+
+/*Flipped divider */
+.custom-shape-divider-bottom-1665363569 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1665363569 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1665363569 .shape-fill {
+  fill: #C7F9CC;
+}
+
+
+
+
+
 /* Header */
 .header {
   display: flex;
@@ -79,4 +127,54 @@ body.dark {
 
 .header .sun {
   background-color: #000000;
+}
+
+/* .profile .image-box {
+  tint-color: 'black'
+} */
+
+
+
+/* All containers */
+.skills-container, .profile, .about .text {
+  display: grid;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*About section */
+.about {
+  /* grid-auto-flow: column; */
+}
+
+
+
+
+/* Skills Box */
+
+.skills {
+  display: flex;
+  background-color: #C7F9CC;
+  justify-content: center;
+}
+
+.skills-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 30rem;
+}
+
+.column, .skill-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
