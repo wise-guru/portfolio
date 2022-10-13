@@ -36,29 +36,15 @@ function DarkMode(props) {
   };
 
   return (
-    <li>
-      {lightModeOn === "light" ? (
-        <button
-          className={`sun ${theme === "dark" ? clickedClass : ""}`}
-          id="darkMode"
-          onClick={(e) => {
-            switchTheme(e);
-            console.log(lightModeOn);
-          }}>
-          <Sun />
-        </button>
-      ) : (
-        <button
-          // className={theme === "dark" ? clickedClass : ""}
-          id="darkMode"
-          onClick={(e) => {
-            switchTheme(e);
-            console.log(lightModeOn);
-          }}>
-          <Moon />
-        </button>
-      )}
-    </li>
+    <button
+      className={theme === "dark" ? clickedClass : ""}
+      id="darkMode"
+      onClick={(e) => {
+        switchTheme(e);
+        console.log(lightModeOn);
+      }}>
+      {lightModeOn === "light" ? <Moon /> : <Sun />}
+    </button>
   );
 }
 
