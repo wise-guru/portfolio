@@ -29,9 +29,7 @@ function Header(props) {
               Contact
             </a>
           </li>
-          <li>
-            <DarkMode lightModeOn={lightModeOn} setLightModeOn={setLightModeOn} />
-          </li>
+          <DarkMode lightModeOn={lightModeOn} setLightModeOn={setLightModeOn} />
         </ul>
       </div>
       <Introduction handleClick={handleClick} />
