@@ -37,8 +37,6 @@ body.dark {
 
 /*Dark Mode */
 #darkMode {
-  /* background: transparent url("../moon.png") no-repeat center;
-  background-size: 30px 30px; */
   width: 45px;
   height: 45px;
   filter: grayscale(100%);
@@ -47,11 +45,8 @@ body.dark {
   transition: background-color 0.3s ease-in-out  filter 0.3s ease-in-out;
 }
 
-#darkMode:hover
-/* #darkMode:focus  */
-{
+#darkMode:hover {
   filter: none;
-  /* background-color: black; */
   cursor: pointer;
 }
 
@@ -66,7 +61,6 @@ body.dark {
 .header {
   background-image: url('./assets/space.jpg');
   background-repeat: no-repeat;
-  /* background-position: center; */
   background-size: cover;
   color: #ffffff;
   margin-bottom: 1rem;
@@ -77,14 +71,6 @@ body.dark {
   height: 85vh;
 }
 
-
-/* Gradient */
-/* .introduction {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 12s ease infinite; */
-	/* height: 100vh; */
-/* } */
 
 @keyframes gradient {
 	0% {
@@ -135,51 +121,6 @@ body.dark {
   50% {
     bottom: 0.5rem;
   }
-}
-
-
-/* Shape divider */
-.custom-shape-divider-top-1665524148 {
-  position: absolute;
-  top: 26.5rem;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1665524148 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
-}
-
-.custom-shape-divider-top-1665524148 .shape-fill {
-  fill: #181037;
-}
-
-
-/*Flipped divider */
-.custom-shape-divider-bottom-1665363569 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1665363569 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
-}
-
-.custom-shape-divider-bottom-1665363569 .shape-fill {
-  fill: var(--divider);
 }
 
 
@@ -234,9 +175,6 @@ body.dark {
   align-items: center;
 }
 
-/* .profile .image-box {
-  tint-color: 'black'
-} */
 
 
 
@@ -344,11 +282,9 @@ body.dark .about {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   background-color: var(--background-color);
   border-radius: 10px;
-  /* padding: 0.25rem; */
   justify-content: center;
   align-items: center;
 
-  /* min-width: 25rem; */
 }
 
 body.dark .skills-container {
@@ -384,8 +320,6 @@ body.dark .skills-container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  
 }
 
 .projects-grid {
