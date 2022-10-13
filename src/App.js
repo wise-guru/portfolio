@@ -7,9 +7,19 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
-  const [lightModeOn, setLightModeOn] = useState(
-    localStorage ? localStorage.getItem("theme") : "light"
-  );
+  const themeMode =
+    localStorage.getItem("theme") === "light"
+      ? "light"
+      : localStorage.getItem("theme") === "dark"
+      ? "dark"
+      : !localStorage
+      ? "light"
+      : "light";
+
+  const [lightModeOn, setLightModeOn] = useState(themeMode);
+
+  console.log(lightModeOn);
+  console.log(themeMode);
 
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
