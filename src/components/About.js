@@ -14,7 +14,7 @@ function About(props) {
             As a musician, I&apos;ve noticed many similarities between learning an instrument and
             learning to program. Both teach you lessons in starting small and progressing
             incrementally. There&apos;s no limit to what you can accomplish; people are constantly
-            pushing the boundaries of what we thoguth was possible both creatively and technically.
+            pushing the boundaries of what we thought was possible both creatively and technically.
           </p>
 
           <p>
