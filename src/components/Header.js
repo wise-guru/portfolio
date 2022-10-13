@@ -1,40 +1,40 @@
-import { ReactComponent as Sun } from "../assets/sun.svg";
-import { ReactComponent as Moon } from "../assets/moon.svg";
-import { useState } from "react";
+import DarkMode from "./DarkMode";
+import Introduction from "./Introduction";
 
 function Header(props) {
-  const { lightModeOn, setLightModeOn } = props;
-
-  const toggleMode = () => {
-    setLightModeOn((current) => !current);
-  };
+  const { lightModeOn, setLightModeOn, handleClick } = props;
 
   return (
     <header className="header">
-      <div className="name">Wise Guru</div>
-      <ul className="links">
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
-      {lightModeOn ? (
-        <button
-          className="toggle-mode moon"
-          onClick={() => {
-            toggleMode();
-          }}>
-          <Moon />
-        </button>
-      ) : (
-        <button
-          className="toggle-mode sun"
-          onClick={() => {
-            toggleMode();
-          }}>
-          <Sun />
-        </button>
-      )}
+      <div className="row">
+        <div className="name">Myla A.</div>
+        <ul className="links">
+          <li>
+            <a className="link" onClick={() => handleClick("about")}>
+              About
+            </a>
+          </li>
+          <li>
+            <a className="link" onClick={() => handleClick("skills")}>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a className="link" onClick={() => handleClick("projects")}>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a className="link" onClick={() => handleClick("contact")}>
+              Contact
+            </a>
+          </li>
+          <li>
+            <DarkMode lightModeOn={lightModeOn} setLightModeOn={setLightModeOn} />
+          </li>
+        </ul>
+      </div>
+      <Introduction handleClick={handleClick} />
     </header>
   );
 }

@@ -4,11 +4,15 @@ import { ReactComponent as LinkedInLight } from "../assets/light-mode/linkedin-l
 import { ReactComponent as LinkedInDark } from "../assets/dark-mode/linkedin-dark.svg";
 
 function Footer(props) {
-  const { lightModeOn } = props;
+  const { lightModeOn, contactRef } = props;
   return (
-    <footer>
-      <a href="https://github.com/wise-guru">{lightModeOn ? <GithubLight /> : <GithubDark />}</a>
-      <a href="">{lightModeOn ? <LinkedInLight /> : <LinkedInDark />}</a>
+    <footer className="footer" ref={contactRef}>
+      <div className="icons">
+        <a href="https://github.com/wise-guru">
+          {lightModeOn === "light" ? <GithubLight /> : <GithubDark />}
+        </a>
+        <a href="">{lightModeOn === "light" ? <LinkedInLight /> : <LinkedInDark />}</a>
+      </div>
     </footer>
   );
 }
