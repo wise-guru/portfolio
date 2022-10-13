@@ -39,7 +39,7 @@ body.dark {
 #darkMode {
   width: 45px;
   height: 45px;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   border: none;
   border-radius: 50%;
   transition: background-color 0.3s ease-in-out  filter 0.3s ease-in-out;
@@ -93,9 +93,14 @@ body.dark {
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
-.title-second:hover {
-  color: #702f9c;
+.title-second {
+  color: #75319e;
   cursor: default;
+  animation: 1.25s ease-out 0s 1 color;
+}
+
+.title-second:hover {
+  color: #ffffff;
 }
 
 @keyframes slideInFromLeft {
@@ -104,6 +109,16 @@ body.dark {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes color {
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: #702f9c;
   }
 }
 
