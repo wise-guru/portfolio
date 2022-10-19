@@ -38,7 +38,7 @@ const projectsArray = [
   {
     title: "To Dooley",
     gif: Todo,
-    description: `A to-do list made using HTML, CSS, vanilla Javascript, and webpack. Tasks are sorted into 
+    description: `A CRUD application made using HTML, CSS, vanilla Javascript, and Webpack. Tasks are sorted into 
     categories and can be given color-coded priorities (low, medium, and high). Users can also edit and delete tasks, 
     as well as check them off once completed. Features the use of ES6 princeiples, modular JS, and object oriented programming.
     `,
