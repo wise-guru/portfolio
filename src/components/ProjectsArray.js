@@ -40,7 +40,7 @@ const projectsArray = [
     gif: Todo,
     description: `A CRUD application made using HTML, CSS, vanilla Javascript, and Webpack. Tasks are sorted into 
     categories and given color-coded priorities (low, medium, and high.) Tasks are stored using localStorage. Users can also edit and delete tasks, 
-    as well as check them off once completed. Features the use of ES6 princeiples, modular JS, and object oriented programming.
+    as well as check them off once completed. Features the use of ES6 principles, modular JS, and object oriented programming.
     `,
     liveLink: "https://wise-guru.github.io/todo-list/",
     githubLink: "https://github.com/wise-guru/todo-list"
