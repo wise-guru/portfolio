@@ -42,12 +42,13 @@ body.dark {
   /* filter: grayscale(100%); */
   border: none;
   border-radius: 50%;
-  transition: background-color 0.3s ease-in-out  filter 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #darkMode:hover {
   filter: none;
   cursor: pointer;
+  transform: scale(1.075);
 }
 
 #darkMode.clicked {
@@ -315,7 +316,7 @@ body.dark .fact {
 }
 
 .skills-container {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   background-color: var(--background-color);
   border-radius: 10px;
