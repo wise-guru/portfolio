@@ -20,7 +20,7 @@ const projectsArray = [
     gif: Waldo,
     description: `A photo tagging app created with React. A key element of this project was calculating
       character coordinates based on dynamic window sizes, and checking user input against
-      stored coordinated in Firebase.`,
+      stored coordinates in Firebase.`,
     liveLink: "https://wise-guru.github.io/wheres-waldo/",
     githubLink: "https://github.com/wise-guru/wheres-waldo"
   },
