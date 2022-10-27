@@ -1,7 +1,7 @@
 import { ReactComponent as HTML } from "../assets/skills/html.svg";
 import { ReactComponent as CSS } from "../assets/skills/css.svg";
 import { ReactComponent as React } from "../assets/skills/react.svg";
-// import { ReactComponent as Nodejs } from "../assets/skills/nodejs.svg";
+import { ReactComponent as Nodejs } from "../assets/skills/nodejs.svg";
 import { ReactComponent as GitLight } from "../assets/skills/git.svg";
 import { ReactComponent as GitDark } from "../assets/dark-mode/git-dark.svg";
 import { ReactComponent as GithubLight } from "../assets/skills/github-light.svg";
@@ -14,6 +14,9 @@ import { ReactComponent as Webpack } from "../assets/skills/webpack.svg";
 import { ReactComponent as JS } from "../assets/skills/javascript.svg";
 import { ReactComponent as Jest } from "../assets/skills/jest.svg";
 import { ReactComponent as Firebase } from "../assets/skills/firebase.svg";
+import { ReactComponent as MongoDB } from "../assets/skills/mongoDB.svg";
+import { ReactComponent as VSCode } from "../assets/skills/vscode.svg";
+import { ReactComponent as NodejsDark } from "../assets/dark-mode/nodejs-dark.svg";
 // import { ReactComponent as  } from "../assets/skills/.svg";
 
 function Skills(props) {
@@ -53,7 +56,7 @@ function Skills(props) {
 
         <div className="column col-three">
           <div className="skill-box">
-            {lightModeOn === "light" ? <NpmLight /> : <NpmDark />}
+            {lightModeOn === "light" ? <NpmLight title="npm" /> : <NpmDark title="npm" />}
             <div className="caption">npm</div>
           </div>
           <div className="skill-box">
@@ -72,12 +75,27 @@ function Skills(props) {
             <div className="caption">javascript</div>
           </div>
           <div className="skill-box">
+            <MongoDB title="MongoDB" />
+            <div className="caption">MongoDB</div>
+          </div>
+          <div className="skill-box">
+            {lightModeOn === "light" ? <GitLight title="Git" /> : <GitDark title="Git" />}
+            <div className="caption">Git</div>
+          </div>
+        </div>
+
+        <div className="column col-five">
+          <div className="skill-box">
             <Jest title="Jest" />
             <div className="caption">Jest</div>
           </div>
           <div className="skill-box">
-            {lightModeOn === "light" ? <GitLight /> : <GitDark />}
-            <div className="caption">Git</div>
+            {lightModeOn === "light" ? <Nodejs title="Node.js" /> : <NodejsDark title="Node.js" />}
+            <div className="caption">Node.js</div>
+          </div>
+          <div className="skill-box">
+            <VSCode title="VSCode" />
+            <div className="caption">VSCode</div>
           </div>
         </div>
       </div>
