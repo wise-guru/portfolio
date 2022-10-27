@@ -43,7 +43,7 @@ function DarkMode(props) {
         switchTheme(e);
         console.log(lightModeOn);
       }}>
-      {lightModeOn === "light" ? <Moon /> : <Sun />}
+      {lightModeOn === "light" ? <Moon title="Dark mode" /> : <Sun title="Light mode" />}
     </button>
   );
 }
