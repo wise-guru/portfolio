@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bebf20cd.css",
+    "main.css": "/portfolio/static/css/main.425d71e9.css",
     "main.js": "/portfolio/static/js/main.ba7b8d91.js",
     "static/media/todo.gif": "/portfolio/static/media/todo.e1d27fddd41e2edf837d.gif",
     "static/media/cv.gif": "/portfolio/static/media/cv.fccdefdd23da4cfe7b8d.gif",
+    "static/media/space.jpg": "/portfolio/static/media/space.2c924691fee9a6a6f782.jpg",
     "static/media/memory.gif": "/portfolio/static/media/memory.01ea241214126f7272b0.gif",
     "static/media/cico.gif": "/portfolio/static/media/cico.580ce2f32c4364b652b0.gif",
     "static/media/shopping.gif": "/portfolio/static/media/shopping.d34ceb6847798b0d2f98.gif",
     "static/media/waldo.gif": "/portfolio/static/media/waldo.a78eff3d6b1ccab87eed.gif",
-    "static/media/space.jpg": "/portfolio/static/media/space.24a2fac1a7c8f7a1813d.jpg",
     "static/media/hackerman.jpg": "/portfolio/static/media/hackerman.76b66e7f6418c3b38d9f.jpg",
     "static/media/react.svg": "/portfolio/static/media/react.67d7a6f421f5ae0f92eee15503cbd78a.svg",
     "static/media/prettier.svg": "/portfolio/static/media/prettier.c077a80aeea3b951d9d76f79e6b58be2.svg",
@@ -41,11 +41,11 @@
     "static/media/tv-light.svg": "/portfolio/static/media/tv-light.dd6fd3f6a0b412ffad68d88c250174ab.svg",
     "static/media/tv-dark.svg": "/portfolio/static/media/tv-dark.869767423953e363afacdac8648c1dc7.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.ae9f69e807524c740f37e5e7431f61bf.svg",
-    "main.bebf20cd.css.map": "/portfolio/static/css/main.bebf20cd.css.map",
+    "main.425d71e9.css.map": "/portfolio/static/css/main.425d71e9.css.map",
     "main.ba7b8d91.js.map": "/portfolio/static/js/main.ba7b8d91.js.map"
   },
   "entrypoints": [
-    "static/css/main.bebf20cd.css",
+    "static/css/main.425d71e9.css",
     "static/js/main.ba7b8d91.js"
   ]
 }
