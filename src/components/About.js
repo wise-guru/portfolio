@@ -8,13 +8,14 @@ function About(props) {
         <Profile lightModeOn={lightModeOn} />
         <div className="text">
           <h2>About Me</h2>
-          <p>Hi! I&apos;m Myla, a web developer.</p>
+          <p>Hi! I&apos;m Myla, a self-taught web developer.</p>
 
           <p>
-            As a musician, I&apos;ve noticed many similarities between learning an instrument and
-            learning to program. Both teach you lessons in starting small and progressing
-            incrementally. There&apos;s no limit to what you can accomplish; people are constantly
-            pushing the boundaries of what we thought was possible both creatively and technically.
+            As someone who has played music for years, I&apos;ve noticed many similarities between
+            learning an instrument and learning to program. Both teach you lessons in starting small
+            and progressing incrementally. There&apos;s no limit to what you can accomplish; people
+            are constantly pushing the boundaries of what we thought was possible both creatively
+            and technically.
           </p>
 
           <p>
