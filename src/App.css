@@ -1,7 +1,6 @@
 :root {
   --blue: #38A3A5;
-  --divider: #80ED99;
-  --main-gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  --skills-background: #001143;
 }
 
 body {
@@ -53,7 +52,7 @@ body.dark {
 
 #darkMode.clicked {
   filter: none !important;
-  background-color: #030208;
+  background-color: #000d40;
 }
 
 
@@ -95,7 +94,7 @@ body.dark {
 }
 
 .title-second {
-  color: #75319e;
+  color: RGB(253,145,102);
   cursor: default;
   animation: 1.25s ease-out 0s 1 color;
 }
@@ -119,7 +118,7 @@ body.dark {
   }
 
   100% {
-    color: #702f9c;
+    color: RGB(253,145,102);
   }
 }
 
@@ -310,7 +309,7 @@ body.dark .fact {
 
 .skills {
   display: flex;
-  background-color: #302167;
+  background-color: var(--skills-background);
   justify-content: center;
   padding: 1rem;
 }
