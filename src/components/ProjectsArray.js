@@ -3,6 +3,7 @@ import Memory from "../assets/projects/memory.gif";
 import Shopping from "../assets/projects/shopping.gif";
 import Waldo from "../assets/projects/waldo.gif";
 import CV from "../assets/projects/cv.gif";
+import Inventory from "../assets/projects/inventory.gif";
 
 const projectsArray = [
   {
@@ -36,7 +37,7 @@ const projectsArray = [
   },
   {
     title: "Game Inventory",
-    gif: "https://github.com/wise-guru/inventory-app/blob/main/public/images/inventory.gif",
+    gif: Inventory,
     description:
       "A CRUD application made using MongoDB, Express, and Node.js. Users can view and sort by all games, publishers, franchises, genres, and game instances (copies). Features the use of MVC pattern and pug template engine.",
     liveLink: "https://inventory-app-ls92.onrender.com/",
