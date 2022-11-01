@@ -4,6 +4,8 @@ import Shopping from "../assets/projects/shopping.gif";
 import Waldo from "../assets/projects/waldo.gif";
 import CV from "../assets/projects/cv.gif";
 import Inventory from "../assets/projects/inventory.gif";
+import Todo from "../assets/projects/todo.gif";
+import Robots from "../assets/projects/robots.gif";
 
 const projectsArray = [
   {
@@ -43,16 +45,24 @@ const projectsArray = [
     liveLink: "https://inventory-app-ls92.onrender.com/",
     githubLink: "https://github.com/wise-guru/inventory-app"
   },
-  // {
-  //   title: "To Dooley",
-  //   gif: Todo,
-  //   description: `A CRUD application made using HTML, CSS, vanilla Javascript, and Webpack. Tasks are sorted into
-  //   categories and given color-coded priorities (low, medium, and high.) Tasks are stored using localStorage. Users can also edit and delete tasks,
-  //   as well as check them off once completed. Features the use of ES6 principles, modular JS, and object oriented programming.
-  //   `,
-  //   liveLink: "https://wise-guru.github.io/todo-list/",
-  //   githubLink: "https://github.com/wise-guru/todo-list"
-  // },
+  {
+    title: "To Dooley",
+    gif: Todo,
+    description: `A CRUD application made using HTML, CSS, vanilla Javascript, and Webpack. Tasks are sorted into
+    categories and given color-coded priorities (low, medium, and high.) Tasks are stored using localStorage. Users can also edit and delete tasks,
+    as well as check them off once completed. Features the use of ES6 principles, modular JS, and object oriented programming.
+    `,
+    liveLink: "https://wise-guru.github.io/todo-list/",
+    githubLink: "https://github.com/wise-guru/todo-list"
+  },
+  {
+    title: "Robots Only",
+    gif: Robots,
+    description: `A site where members can write anonymous posts. Created with MongoDB, Node.js, and Express. 
+      Members can see the author of a post while outsiders can only see messages and wonder who wrote it. Features user authentication, dark mode, and mobile responsiveness.`,
+    liveLink: "https://robots-only.onrender.com/",
+    githubLink: "https://github.com/wise-guru/robots-only"
+  },
   {
     title: "CV Builder",
     gif: CV,
