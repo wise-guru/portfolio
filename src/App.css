@@ -392,16 +392,22 @@ body.dark .project, body.dark .profile, body.dark .text {
 .project .gif-box {
   display: grid;
   justify-content: center;
+  justify-self: center;
 }
 
 .about h2, .projects h1, h2 {
   text-align: center;
 }
 
+.gif-box {
+  width: 95%;
+  
+}
+
 
 
 .gif-box img {
-  width: 300px;
+  width: 100%;
 }
 
 .project .icons {
