@@ -4,7 +4,7 @@ import Shopping from "../assets/projects/shopping.gif";
 import Waldo from "../assets/projects/waldo.gif";
 import CV from "../assets/projects/cv.gif";
 import Inventory from "../assets/projects/inventory.gif";
-import Todo from "../assets/projects/todo.gif";
+import Todo from "../assets/projects/todolist.png";
 import Robots from "../assets/projects/robots.gif";
 
 const projectsArray = [
