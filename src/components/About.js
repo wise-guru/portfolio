@@ -8,7 +8,7 @@ function About(props) {
         <Profile lightModeOn={lightModeOn} />
         <div className="text">
           <h2>About Me</h2>
-          <p>Hi! I&apos;m Myla, a self-taught web developer.</p>
+          <p>Hi! I&apos;m Myla, a web developer.</p>
 
           <p>
             As someone who has played music for years, I&apos;ve noticed many similarities between
