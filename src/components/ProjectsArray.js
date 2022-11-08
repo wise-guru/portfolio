@@ -2,12 +2,20 @@ import Cico from "../assets/projects/cico.gif";
 import Memory from "../assets/projects/memory.gif";
 import Shopping from "../assets/projects/shopping.gif";
 import Waldo from "../assets/projects/waldo.gif";
-import CV from "../assets/projects/cv.gif";
+// import CV from "../assets/projects/cv.gif";
 import Inventory from "../assets/projects/inventory.gif";
-import Todo from "../assets/projects/todolist.png";
+// import Todo from "../assets/projects/todolist.png";
 import Robots from "../assets/projects/robots.gif";
 
 const projectsArray = [
+  {
+    title: "Game Inventory",
+    gif: Inventory,
+    description:
+      "A CRUD application made using MongoDB, Express, and Node.js. Users can view and sort by all games, publishers, franchises, genres, and game instances (copies). Features the use of MVC pattern and pug template engine.",
+    liveLink: "https://inventory-app-ls92.onrender.com/",
+    githubLink: "https://github.com/wise-guru/inventory-app"
+  },
   {
     title: "Cico Mode",
     gif: Cico,
@@ -22,7 +30,7 @@ const projectsArray = [
     gif: Waldo,
     description: `A photo tagging app created with React. A key element of this project was calculating
       character coordinates based on dynamic window sizes, and checking user input against
-      stored coordinates in Firebase.`,
+      stored coordinates in Firebase's Cloud Firestore.`,
     liveLink: "https://wise-guru.github.io/wheres-waldo/",
     githubLink: "https://github.com/wise-guru/wheres-waldo"
   },
@@ -37,14 +45,7 @@ const projectsArray = [
     liveLink: "https://wise-guru.github.io/shopping-cart/",
     githubLink: "https://github.com/wise-guru/shopping-cart"
   },
-  {
-    title: "Game Inventory",
-    gif: Inventory,
-    description:
-      "A CRUD application made using MongoDB, Express, and Node.js. Users can view and sort by all games, publishers, franchises, genres, and game instances (copies). Features the use of MVC pattern and pug template engine.",
-    liveLink: "https://inventory-app-ls92.onrender.com/",
-    githubLink: "https://github.com/wise-guru/inventory-app"
-  },
+
   {
     title: "Robots Only",
     gif: Robots,
@@ -61,26 +62,26 @@ const projectsArray = [
       shuffled accordingly.`,
     liveLink: "https://wise-guru.github.io/memory-card/",
     githubLink: "https://github.com/wise-guru/memory-card"
-  },
-  {
-    title: "To Dooley",
-    gif: Todo,
-    description: `A CRUD application made using HTML, CSS, vanilla Javascript, and Webpack. Tasks are sorted into
-    categories and given color-coded priorities (low, medium, and high.) Tasks are stored using localStorage. Users can edit, delete tasks,
-    and check them off once completed. Features the use of ES6 principles, modular JS, and object oriented programming.
-    `,
-    liveLink: "https://wise-guru.github.io/todo-list/",
-    githubLink: "https://github.com/wise-guru/todo-list"
-  },
-  {
-    title: "CV Builder",
-    gif: CV,
-    description: `A web app that dynamically renders a formatted CV based on user inputs. This app leverages React class components to manage states
-    and display a preview of the user's resume. More entries can be added for each section (education, experience, skills). 
-    `,
-    liveLink: "https://wise-guru.github.io/cv-builder/",
-    githubLink: "https://github.com/wise-guru/cv-builder"
   }
+  // {
+  //   title: "To Dooley",
+  //   gif: Todo,
+  //   description: `A CRUD application made using HTML, CSS, vanilla Javascript, and Webpack. Tasks are sorted into
+  //   categories and given color-coded priorities (low, medium, and high.) Tasks are stored using localStorage. Users can edit, delete tasks,
+  //   and check them off once completed. Features the use of ES6 principles, modular JS, and object oriented programming.
+  //   `,
+  //   liveLink: "https://wise-guru.github.io/todo-list/",
+  //   githubLink: "https://github.com/wise-guru/todo-list"
+  // },
+  // {
+  //   title: "CV Builder",
+  //   gif: CV,
+  //   description: `A web app that dynamically renders a formatted CV based on user inputs. This app leverages React class components to manage states
+  //   and display a preview of the user's resume. More entries can be added for each section (education, experience, skills).
+  //   `,
+  //   liveLink: "https://wise-guru.github.io/cv-builder/",
+  //   githubLink: "https://github.com/wise-guru/cv-builder"
+  // }
 ];
 
 export default projectsArray;
