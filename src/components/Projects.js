@@ -18,7 +18,7 @@ function Projects(props) {
               <div className="project" key={index}>
                 <h2>{project.title}</h2>
                 <div className="gif-box">
-                  <a href={project.liveLink}>
+                  <a href={project.liveLink} target="_blank" rel="noreferrer">
                     <img
                       src={project.gif}
                       style={{ borderRadius: "3px" }}

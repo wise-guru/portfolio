@@ -12,7 +12,7 @@ const projectsArray = [
     title: "Game Inventory",
     gif: Inventory,
     description:
-      "A CRUD application made using MongoDB, Express, and Node.js. Users can view and sort by all games, publishers, franchises, genres, and game instances (copies). Features the use of MVC pattern and pug template engine.",
+      "A fullstack CRUD application made using MongoDB, Express, and Node.js. Users can view and sort by all games, publishers, franchises, genres, and game instances (copies). Features the use of MVC pattern and pug template engine.",
     liveLink: "https://inventory-app-ls92.onrender.com/",
     githubLink: "https://github.com/wise-guru/inventory-app"
   },
