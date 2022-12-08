@@ -18,9 +18,6 @@ function App() {
 
   const [lightModeOn, setLightModeOn] = useState(themeMode);
 
-  console.log(lightModeOn);
-  console.log(themeMode);
-
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
