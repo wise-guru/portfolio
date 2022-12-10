@@ -6,7 +6,7 @@ import { ReactComponent as LinkedInDark } from "../assets/dark-mode/linkedin-dar
 function Footer(props) {
   const { lightModeOn, contactRef } = props;
   return (
-    <footer className="footer" ref={contactRef}>
+    <footer className="footer" ref={contactRef} id="contact">
       <div className="icons">
         <a href="https://github.com/wise-guru">
           {lightModeOn === "light" ? <GithubLight /> : <GithubDark />}

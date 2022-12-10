@@ -1,3 +1,11 @@
+html{
+  scroll-behavior:smooth
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
 :root {
   --blue: #38A3A5;
   --skills-background: #001143;
@@ -52,11 +60,11 @@ body.dark {
 
 #darkMode.clicked {
   filter: none !important;
-  background-color: #000d40;
+  background-color: #0e2057;
 }
 
 
-/* Space background */
+/*------------ background ------------------*/
 
 .header {
   background-image: url('./assets/space.jpg');
@@ -68,14 +76,11 @@ body.dark {
 
 }
 
+/*-------------------------------------------Introduction -----------------------------------------------*/
 .introduction {
   height: 86vh;
 }
 
-
-
-
-/* Introduction */
 .introduction {
   display: flex;
   flex-direction: column;
@@ -145,9 +150,7 @@ body.dark {
 
 
 
-
-
-/* Header */
+/* -----------------------------------------Header ---------------------------------------------*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -163,13 +166,18 @@ body.dark {
   justify-content: center;
 }
 
+.header .link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .header .name:hover {
   transform: scale(1.05);
   cursor: default;
 }
 
 .header .link:hover {
-  color: #71319b;
+  color: RGB(253,145,102);
   cursor: pointer;
 }
 
@@ -198,7 +206,7 @@ body.dark {
 
 
 
-/* All containers */
+/*-----------------------------------------All containers --------------------------------------------*/
 .skill-box, .profile, .about, .project {
   align-items: center;
 }
@@ -212,7 +220,7 @@ body.dark {
 
 }
 
-/*About section */
+/*------------------------------------------About section------------------------------------------*/
 .about {
   display: flex;
   flex-direction: column;
@@ -232,6 +240,11 @@ body.dark .about {
 .image-box {
   display: flex;
   justify-content: center;
+}
+
+.about .image-box img {
+  width: 320px;
+  border-radius: 5px;
 }
 
 .facts-container {
@@ -307,10 +320,11 @@ body.dark .fact {
 }
 
 
-/* Skills Box */
+/*-------------------------------------------------Skills Box-------------------------------------------------*/
 
 .skills {
   display: flex;
+  flex-direction: column;
   background-color: var(--skills-background);
   justify-content: center;
   padding: 1rem;
@@ -348,7 +362,7 @@ body.dark .skills-container {
   align-items: center;
 }
 
-/* Projects */
+/*------------------------------------------ Projects--------------------------------------*/
 
 .projects {
   padding: 1rem;
@@ -359,6 +373,10 @@ body.dark .skills-container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.projects h1, .skills h1  {
+  margin-bottom: 16px;
 }
 
 .projects-grid {
@@ -381,6 +399,59 @@ body.dark .skills-container {
   transform: scale(1.025);
 }
 
+.projects .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.projects .button-container button {
+  /* background-color: white;
+  color: black;
+  border: 2px solid RGB(253,145,102); /* Peach 
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px; */
+
+
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #001143;
+}
+
+.button-container button:hover {
+  background-color: #ffffff;
+  color: #001143;
+  outline: 2px solid #001143;
+}
+
+body.dark .button-container button {
+  background-color: #000000;
+  color: RGB(253,145,102);
+  outline: 2px solid RGB(253,145,102);
+}
+
+body.dark .button-container button:hover {
+color: #000000;
+  background-color: RGB(253,145,102);
+  outline: 2px solid #000;
+}
+
 body.dark .project, body.dark .profile, body.dark .text {
   background-color: hsla(0, 100%, 100%, 0.07);
 	box-shadow:
@@ -396,7 +467,7 @@ body.dark .project, body.dark .profile, body.dark .text {
   justify-self: center;
 }
 
-.about h2, .projects h1, h2 {
+.about h2, .projects h1, h2, .skills h1 {
   text-align: center;
 }
 
@@ -404,8 +475,6 @@ body.dark .project, body.dark .profile, body.dark .text {
   width: 95%;
   
 }
-
-
 
 .gif-box img {
   width: 100%;
@@ -419,7 +488,7 @@ body.dark .project, body.dark .profile, body.dark .text {
 }
 
 
-/*Footer */
+/*--------------------------------------------------Footer -------------------------------------------*/
 .footer {
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
   display: flex;
@@ -441,9 +510,57 @@ body.dark .footer {
 		0px 1px 3px 0px hsla(0,0%,0%,0.2);
 }
 
+@media (max-width: 375px) {
+
+  header ul {
+    padding: 0;
+  }
+
+  #darkMode {
+    height: 32px;
+    width: 32px;
+  }
+
+.header svg {
+  height: 24px;
+  width: 24px;
+}
+
+.about .image-box img {
+  width: 275px;
+}
+.skill-box svg {
+  height: 32px;
+  width: 32px;
+}
+
+.skill-box .title, .skill-box .caption {
+  font-size: 0.8rem;
+}
+}
+
 @media (min-width: 568px) {
   .profile {
     width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills .column {
+    gap: 3rem;
+  }
+
+  .skills-container, .about {
+    margin-bottom: 2rem;
+  }
+
+  .skills-container {
+    width: 80%;
+    align-self: center;
   }
 }
 
@@ -457,23 +574,27 @@ body.dark .footer {
     padding: 1rem 2rem;
   }
 
+  #darkMode.clicked {
+    background-color: #000d40;
+  }
+
   .about-section {
     display: flex;
     justify-content: center;
     
   }
 
-  
   .about, .skills {
     display: grid;
-    grid-auto-flow: column;
     padding: 1rem;
     justify-content: center;
   }
 
   .about {
+    grid-auto-flow: column;
     grid-template-rows: 1fr;
     gap: 1rem;
+    margin-top: 18px;
   }
 
   .about .profile {
@@ -497,6 +618,15 @@ body.dark .footer {
     padding: 3rem 0;
   }
 
+  .skills-container {
+    width: auto;
+    align-self: auto;
+  }
+
+  .skills h1 {
+    margin-bottom: 36px;
+  }
+
 
   .skills-container svg {
     height: 3.5rem;
@@ -509,7 +639,6 @@ body.dark .footer {
     transition: transform .3s ease-in-out;
 
   }
-
 
   .skills-container:hover {
     transform: scale(1.025);
@@ -540,6 +669,9 @@ body.dark .footer {
     flex-grow: 1;
   }
 
+  .projects h1 {
+    margin-bottom: 0;
+  }
 
   .project {
     min-height: 300px;

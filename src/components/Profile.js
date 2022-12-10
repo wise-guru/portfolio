@@ -15,7 +15,7 @@ function Profile(props) {
   return (
     <div className="profile">
       <div className="image-box">
-        <img src={ProfilePic} style={{ width: "320px", borderRadius: "5px" }}></img>
+        <img src={ProfilePic}></img>
       </div>
 
       <div>

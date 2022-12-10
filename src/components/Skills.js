@@ -22,7 +22,8 @@ import { ReactComponent as NodejsDark } from "../assets/dark-mode/nodejs-dark.sv
 function Skills(props) {
   const { lightModeOn, skillsRef } = props;
   return (
-    <section className="skills" ref={skillsRef}>
+    <section className="skills" ref={skillsRef} id="skills">
+      <h1>Skills</h1>
       <div className="skills-container">
         <div className="column col-one">
           <div className="skill-box">

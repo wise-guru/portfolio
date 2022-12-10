@@ -3,7 +3,7 @@ import Profile from "./Profile";
 function About(props) {
   const { aboutRef, lightModeOn } = props;
   return (
-    <section className="about-section" ref={aboutRef}>
+    <section className="about-section" ref={aboutRef} id="about">
       <div className="about">
         <Profile lightModeOn={lightModeOn} />
         <div className="text">
