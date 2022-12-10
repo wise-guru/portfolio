@@ -11,8 +11,8 @@ const MoreProjectsArray = [
     image: Blog,
     description: `The Rubber Ducky Blog is a blog that utilizes the MERN stack. Users can browse posts and leave comments. Information is displayed from a REST API endpoint.
     `,
-    liveLink: "https://wise-guru.github.io/restaurant-page/",
-    githubLink: "https://github.com/wise-guru/restaurant-page"
+    liveLink: "https://wise-guru.github.io/blog/",
+    githubLink: "https://github.com/wise-guru/blog"
   },
   {
     title: "CV Builder",
