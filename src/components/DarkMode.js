@@ -41,7 +41,6 @@ function DarkMode(props) {
       id="darkMode"
       onClick={(e) => {
         switchTheme(e);
-        console.log(lightModeOn);
       }}>
       {lightModeOn === "light" ? <Moon title="Dark mode" /> : <Sun title="Light mode" />}
     </button>

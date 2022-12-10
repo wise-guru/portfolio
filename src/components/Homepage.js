@@ -6,14 +6,14 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 
 function Homepage(props) {
-  const { lightModeOn, setLightModeOn } = props;
+  const { lightModeOn, setLightModeOn, handleClick, aboutRef } = props;
   return (
     <div>
       <header className="header">
         <Header lightModeOn={lightModeOn} setLightModeOn={setLightModeOn} />
-        <Introduction />
+        <Introduction handleClick={handleClick} />
       </header>
-      <About />
+      <About aboutRef={aboutRef} />
       <Skills lightModeOn={lightModeOn} />
       <Projects lightModeOn={lightModeOn} />
       <Footer lightModeOn={lightModeOn} />

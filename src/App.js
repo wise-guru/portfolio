@@ -22,17 +22,17 @@ function App() {
   const contactRef = useRef(null);
   const skillsRef = useRef(null);
 
-  // const handleClick = (e) => {
-  //   if (e === "about") {
-  //     aboutRef.current?.scrollIntoView({ behavior: "smooth" });
-  //   } else if (e === "projects") {
-  //     projectsRef.current?.scrollIntoView({ behavior: "smooth" });
-  //   } else if (e === "contact") {
-  //     contactRef.current?.scrollIntoView({ behavior: "smooth" });
-  //   } else if (e === "skills") {
-  //     skillsRef.current?.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
+  const handleClick = (e) => {
+    if (e === "about") {
+      aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+    } else if (e === "projects") {
+      projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+    } else if (e === "contact") {
+      contactRef.current?.scrollIntoView({ behavior: "smooth" });
+    } else if (e === "skills") {
+      skillsRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <HashRouter basename="/">
@@ -45,7 +45,7 @@ function App() {
                 aboutRef={aboutRef}
                 lightModeOn={lightModeOn}
                 setLightModeOn={setLightModeOn}
-                // handleClick={handleClick}
+                handleClick={handleClick}
                 skillsRef={skillsRef}
                 projectsRef={projectsRef}
                 contactRef={contactRef}
