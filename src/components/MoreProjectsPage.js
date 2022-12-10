@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import { useEffect } from "react";
 
 function MoreProjectsPage(props) {
-  const { lightModeOn } = props;
+  const { lightModeOn, setLightModeOn } = props;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -17,7 +17,7 @@ function MoreProjectsPage(props) {
   return (
     <div>
       <header className="header">
-        <Header lightModeOn={lightModeOn} />
+        <Header lightModeOn={lightModeOn} setLightModeOn={setLightModeOn} />
       </header>
 
       <div className="projects container">
@@ -52,7 +52,7 @@ function MoreProjectsPage(props) {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer lightModeOn={lightModeOn} />
     </div>
   );
 }

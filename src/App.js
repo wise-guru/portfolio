@@ -53,7 +53,9 @@ function App() {
             }></Route>
           <Route
             path="/more-projects"
-            element={<MoreProjectsPage lightModeOn={lightModeOn} />}></Route>
+            element={
+              <MoreProjectsPage lightModeOn={lightModeOn} setLightModeOn={setLightModeOn} />
+            }></Route>
         </Routes>
       </div>
     </HashRouter>
