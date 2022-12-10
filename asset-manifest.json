@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.954abcc1.css",
-    "main.js": "/portfolio/static/js/main.65edd2f9.js",
+    "main.css": "/portfolio/static/css/main.0107eae6.css",
+    "main.js": "/portfolio/static/js/main.86c2cc1e.js",
     "static/media/inventory.gif": "/portfolio/static/media/inventory.f85b94f39cd3223f99b8.gif",
     "static/media/space.jpg": "/portfolio/static/media/space.2c924691fee9a6a6f782.jpg",
     "static/media/robots.gif": "/portfolio/static/media/robots.273e24193dde96e83a91.gif",
     "static/media/memory.gif": "/portfolio/static/media/memory.01ea241214126f7272b0.gif",
+    "static/media/restaurant.png": "/portfolio/static/media/restaurant.d38be05c9f81738bd788.png",
     "static/media/cico.gif": "/portfolio/static/media/cico.580ce2f32c4364b652b0.gif",
     "static/media/shopping.gif": "/portfolio/static/media/shopping.d34ceb6847798b0d2f98.gif",
+    "static/media/blog.png": "/portfolio/static/media/blog.a1f5ade74ec8a4b6fc3e.png",
     "static/media/waldo.gif": "/portfolio/static/media/waldo.a78eff3d6b1ccab87eed.gif",
+    "static/media/dashboard.png": "/portfolio/static/media/dashboard.f8f7187403f10a4e7359.png",
     "static/media/hackerman.jpg": "/portfolio/static/media/hackerman.76b66e7f6418c3b38d9f.jpg",
+    "static/media/readly.png": "/portfolio/static/media/readly.98820c565b216e9c5029.png",
+    "static/media/cv-builder.png": "/portfolio/static/media/cv-builder.7c926a569af5cef8ebf6.png",
+    "static/media/todolist.png": "/portfolio/static/media/todolist.7a8e71ab42e67a8a07c0.png",
     "static/media/react.svg": "/portfolio/static/media/react.67d7a6f421f5ae0f92eee15503cbd78a.svg",
     "static/media/prettier.svg": "/portfolio/static/media/prettier.c077a80aeea3b951d9d76f79e6b58be2.svg",
     "static/media/firebase.svg": "/portfolio/static/media/firebase.a98130f5b66f812d2f2be49e90b48583.svg",
@@ -41,11 +47,11 @@
     "static/media/tv-light.svg": "/portfolio/static/media/tv-light.dd6fd3f6a0b412ffad68d88c250174ab.svg",
     "static/media/tv-dark.svg": "/portfolio/static/media/tv-dark.869767423953e363afacdac8648c1dc7.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.ae9f69e807524c740f37e5e7431f61bf.svg",
-    "main.954abcc1.css.map": "/portfolio/static/css/main.954abcc1.css.map",
-    "main.65edd2f9.js.map": "/portfolio/static/js/main.65edd2f9.js.map"
+    "main.0107eae6.css.map": "/portfolio/static/css/main.0107eae6.css.map",
+    "main.86c2cc1e.js.map": "/portfolio/static/js/main.86c2cc1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.954abcc1.css",
-    "static/js/main.65edd2f9.js"
+    "static/css/main.0107eae6.css",
+    "static/js/main.86c2cc1e.js"
   ]
 }
