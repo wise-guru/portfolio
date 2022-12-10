@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Homepage from "./components/Homepage";
 
@@ -35,30 +35,9 @@ function App() {
   // };
 
   return (
-    <BrowserRouter>
+    <HashRouter basename="/">
       <div className="App">
         <Routes>
-          {/* <Header
-            lightModeOn={lightModeOn}
-            setLightModeOn={setLightModeOn}
-            handleClick={handleClick}
-          />
-          <Introduction handleClick={handleClick} />
-          <About aboutRef={aboutRef} lightModeOn={lightModeOn} />
-          <Skills lightModeOn={lightModeOn} skillsRef={skillsRef} />
-          <Projects lightModeOn={lightModeOn} projectsRef={projectsRef} />
-          <Footer lightModeOn={lightModeOn} contactRef={contactRef} /> */}
-
-          {/* <Homepage
-            aboutRef={aboutRef}
-            lightModeOn={lightModeOn}
-            setLightModeOn={setLightModeOn}
-            handleClick={handleClick}
-            skillsRef={skillsRef}
-            projectsRef={projectsRef}
-            contactRef={contactRef}
-          /> */}
-
           <Route
             path="/"
             element={
@@ -75,10 +54,9 @@ function App() {
           <Route
             path="/more-projects"
             element={<MoreProjectsPage lightModeOn={lightModeOn} />}></Route>
-          {/* <MoreProjectsPage lightModeOn={lightModeOn} /> */}
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
