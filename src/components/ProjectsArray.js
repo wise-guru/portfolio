@@ -1,4 +1,5 @@
-import Cico from "../assets/projects/cico.gif";
+// import Cico from "../assets/projects/cico.gif";
+import Blog from "../assets/projects/blog.webp";
 import Memory from "../assets/projects/memory.gif";
 import Shopping from "../assets/projects/shopping.gif";
 import Waldo from "../assets/projects/waldo.gif";
@@ -17,13 +18,12 @@ const projectsArray = [
     githubLink: "https://github.com/wise-guru/inventory-app"
   },
   {
-    title: "Cico Mode",
-    gif: Cico,
-    description: `Cico Mode is a web application that predicts weight over a period of time. Using
-      inputs from a form, an HTML table is generated. It leverages React Hooks. I utilize
-      Firebase for the backend, and an API for the BMI calculator.`,
-    liveLink: "https://wise-guru.github.io/cico-mode/",
-    githubLink: "https://github.com/wise-guru/cico-mode"
+    title: "Rubber Ducky Blog",
+    gif: Blog,
+    description: `The Rubber Ducky Blog is a fullstack application that utilizes the MERN stack. Users can browse posts and leave comments. Information is displayed from REST API endpoints.
+    `,
+    liveLink: "https://wise-guru.github.io/blog/",
+    githubLink: "https://github.com/wise-guru/blog"
   },
   {
     title: "Where's Waldo",
@@ -82,14 +82,6 @@ const projectsArray = [
   //   liveLink: "https://wise-guru.github.io/cv-builder/",
   //   githubLink: "https://github.com/wise-guru/cv-builder"
   // },
-  // {
-  //     title: "Rubber Ducky Blog",
-  //   gif: CV,
-  //   description: `The Rubber Ducky Blog is a blog that utilizes the MERN stack. Users can browse posts and leave comments. Information is displayed from a REST API endpoint.
-  //   `,
-  //   liveLink: "https://wise-guru.github.io/blog/",
-  //   githubLink: "https://github.com/wise-guru/blog"
-  // }
 ];
 
 export default projectsArray;

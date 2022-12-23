@@ -1,18 +1,20 @@
 import Todo from "../assets/projects/todolist.png";
 import CVBuilder from "../assets/projects/cv-builder.png";
-import Blog from "../assets/projects/blog.png";
+// import Blog from "../assets/projects/blog.png";
+import Cico from "../assets/projects/cico.gif";
 import Readly from "../assets/projects/readly.png";
 import Restaurant from "../assets/projects/restaurant.png";
 import Dashboard from "../assets/projects/dashboard.png";
 
 const MoreProjectsArray = [
   {
-    title: "Rubber Ducky Blog",
-    image: Blog,
-    description: `The Rubber Ducky Blog is a blog that utilizes the MERN stack. Users can browse posts and leave comments. Information is displayed from a REST API endpoint.
-    `,
-    liveLink: "https://wise-guru.github.io/blog/",
-    githubLink: "https://github.com/wise-guru/blog"
+    title: "Cico Mode",
+    image: Cico,
+    description: `Cico Mode is a web application that predicts weight over a period of time. Using
+      inputs from a form, an HTML table is generated. It leverages React Hooks. I utilize
+      Firebase for the backend, and an API for the BMI calculator.`,
+    liveLink: "https://wise-guru.github.io/cico-mode/",
+    githubLink: "https://github.com/wise-guru/cico-mode"
   },
   {
     title: "CV Builder",
