@@ -13,7 +13,7 @@ function Homepage(props) {
         <Header lightModeOn={lightModeOn} setLightModeOn={setLightModeOn} />
         <Introduction handleClick={handleClick} />
       </header>
-      <About aboutRef={aboutRef} />
+      <About aboutRef={aboutRef} lightModeOn={lightModeOn} />
       <Skills lightModeOn={lightModeOn} />
       <Projects lightModeOn={lightModeOn} />
       <Footer lightModeOn={lightModeOn} />
