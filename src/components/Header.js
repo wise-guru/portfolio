@@ -18,13 +18,13 @@ function Header(props) {
         <li>
           {/* <a className="link" onClick={() => handleClick("about")}>
             About */}
-          <Link to="/#about" className="link">
+          <HashLink to="/#about" className="link">
             About
-          </Link>
+          </HashLink>
           {/* </a> */}
         </li>
         <li>
-          <HashLink to="/#skills" className="link">
+          <HashLink to="#skills" className="link">
             Skills
           </HashLink>
           {/* <a className="link" onClick={() => handleClick("skills")}>
