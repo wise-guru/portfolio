@@ -1,9 +1,10 @@
 import Todo from "../assets/projects/todolist.png";
 import CVBuilder from "../assets/projects/cv-builder.png";
 // import Blog from "../assets/projects/blog.png";
+import GA from "../assets/projects/greys-anatomy.png";
 import Cico from "../assets/projects/cico.gif";
 import Readly from "../assets/projects/readly.png";
-import Restaurant from "../assets/projects/restaurant.png";
+// import Restaurant from "../assets/projects/restaurant.png";
 import Dashboard from "../assets/projects/dashboard.png";
 
 const MoreProjectsArray = [
@@ -25,6 +26,22 @@ const MoreProjectsArray = [
     liveLink: "https://wise-guru.github.io/cv-builder/",
     githubLink: "https://github.com/wise-guru/cv-builder"
   },
+  // {
+  //   title: "Restaurant Page",
+  //   image: Restaurant,
+  //   description: `A single-page application made using HTML, CSS, JS, and Webpack. Utilizes ES6 modules and dynamic webpage changes using JS DOM manipulation. A key feature of this project was using Javascript alone to generate the entire DOM of this website.
+  // `,
+  //   liveLink: "https://wise-guru.github.io/restaurant-page/",
+  //   githubLink: "https://github.com/wise-guru/restaurant-page"
+  // },
+  {
+    title: "Grey's Anatomy Universe API",
+    image: GA,
+    description: `A REST API for the Grey's Anatomy TV show universe. Created using Node.js, Express, and MongoDB. Users are able to query the episodes of shows from the GA universe through several parameters. Features documentation and a mobile-first design.
+  `,
+    liveLink: "https://greysanatomyuniverse-api.onrender.com/",
+    githubLink: "https://github.com/wise-guru/greys-anatomy-universe-api"
+  },
   {
     title: "To Dooley",
     image: Todo,
@@ -34,14 +51,6 @@ const MoreProjectsArray = [
     `,
     liveLink: "https://wise-guru.github.io/todo-list/",
     githubLink: "https://github.com/wise-guru/todo-list"
-  },
-  {
-    title: "Restaurant Page",
-    image: Restaurant,
-    description: `A single-page application made using HTML, CSS, JS, and Webpack. Utilizes ES6 modules and dynamic webpage changes using JS DOM manipulation. A key feature of this project was using Javascript alone to generate the entire DOM of this website.
-  `,
-    liveLink: "https://wise-guru.github.io/restaurant-page/",
-    githubLink: "https://github.com/wise-guru/restaurant-page"
   },
   {
     title: "Readly",
