@@ -1,4 +1,5 @@
 import About from "./About";
+import Contact from "./Contact";
 import Footer from "./Footer";
 import Header from "./Header";
 import Introduction from "./Introduction";
@@ -16,6 +17,7 @@ function Homepage(props) {
       <About aboutRef={aboutRef} lightModeOn={lightModeOn} />
       <Skills lightModeOn={lightModeOn} />
       <Projects lightModeOn={lightModeOn} />
+      <Contact lightModeOn={lightModeOn} />
       <Footer lightModeOn={lightModeOn} />
     </div>
   );

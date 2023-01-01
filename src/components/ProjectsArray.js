@@ -1,12 +1,14 @@
-// import Cico from "../assets/projects/cico.gif";
 import Blog from "../assets/projects/blog.webp";
 import Memory from "../assets/projects/memory.gif";
 import Shopping from "../assets/projects/shopping.gif";
 import Waldo from "../assets/projects/waldo.gif";
-// import CV from "../assets/projects/cv.gif";
 import Inventory from "../assets/projects/inventory.gif";
 // import Todo from "../assets/projects/todolist.png";
 import Robots from "../assets/projects/robots.gif";
+// import CV from "../assets/projects/cv-builder.png";
+// import Blog from "../assets/projects/blog.png";
+import GA from "../assets/projects/greys-anatomy.png";
+import Cico from "../assets/projects/cico.gif";
 
 const projectsArray = [
   {
@@ -55,14 +57,30 @@ const projectsArray = [
     githubLink: "https://github.com/wise-guru/robots-only"
   },
   {
-    title: "Memory Time",
-    gif: Memory,
-    description: `A memory card game built with React Functional Components. Players must click through
-      each character once to win. With each click, the state is updated and the cards are
-      shuffled accordingly.`,
-    liveLink: "https://wise-guru.github.io/memory-card/",
-    githubLink: "https://github.com/wise-guru/memory-card"
-  }
+    title: "Grey's Anatomy Universe API",
+    gif: GA,
+    description: `A REST API for the Grey's Anatomy TV show universe. Created using Node.js, Express, and MongoDB. Users are able to query the episodes of shows from the GA universe through several parameters. Features documentation and a mobile-first design.
+  `,
+    liveLink: "https://greysanatomyuniverse-api.onrender.com/",
+    githubLink: "https://github.com/wise-guru/greys-anatomy-universe-api"
+  },
+  // {
+  //   title: "Grey's Anatomy Universe API",
+  //   gif: GA,
+  //   description: `A REST API for the Grey's Anatomy TV show universe. Created using Node.js, Express, and MongoDB. Users are able to query the episodes of shows from the GA universe through several parameters. Features documentation and a mobile-first design.
+  // `,
+  //   liveLink: "https://greysanatomyuniverse-api.onrender.com/",
+  //   githubLink: "https://github.com/wise-guru/greys-anatomy-universe-api"
+  // },
+  {
+    title: "Cico Mode",
+    gif: Cico,
+    description: `Cico Mode is a web application that predicts weight over a period of time. Using
+      inputs from a form, an HTML table is generated. It leverages React Hooks. I utilize
+      Firebase for the backend, and an API for the BMI calculator.`,
+    liveLink: "https://wise-guru.github.io/cico-mode/",
+    githubLink: "https://github.com/wise-guru/cico-mode"
+  },
   // {
   //   title: "To Dooley",
   //   gif: Todo,
@@ -82,6 +100,15 @@ const projectsArray = [
   //   liveLink: "https://wise-guru.github.io/cv-builder/",
   //   githubLink: "https://github.com/wise-guru/cv-builder"
   // },
+  {
+    title: "Memory Time",
+    gif: Memory,
+    description: `A memory card game built with React Functional Components. Players must click through
+      each character once to win. With each click, the state is updated and the cards are
+      shuffled accordingly.`,
+    liveLink: "https://wise-guru.github.io/memory-card/",
+    githubLink: "https://github.com/wise-guru/memory-card"
+  }
 ];
 
 export default projectsArray;

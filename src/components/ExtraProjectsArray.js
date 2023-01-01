@@ -35,14 +35,6 @@ const MoreProjectsArray = [
   //   githubLink: "https://github.com/wise-guru/restaurant-page"
   // },
   {
-    title: "Grey's Anatomy Universe API",
-    image: GA,
-    description: `A REST API for the Grey's Anatomy TV show universe. Created using Node.js, Express, and MongoDB. Users are able to query the episodes of shows from the GA universe through several parameters. Features documentation and a mobile-first design.
-  `,
-    liveLink: "https://greysanatomyuniverse-api.onrender.com/",
-    githubLink: "https://github.com/wise-guru/greys-anatomy-universe-api"
-  },
-  {
     title: "To Dooley",
     image: Todo,
     description: `A CRUD application made using HTML, CSS, vanilla Javascript, and Webpack. Tasks are sorted into
@@ -51,6 +43,14 @@ const MoreProjectsArray = [
     `,
     liveLink: "https://wise-guru.github.io/todo-list/",
     githubLink: "https://github.com/wise-guru/todo-list"
+  },
+  {
+    title: "Grey's Anatomy Universe API",
+    image: GA,
+    description: `A REST API for the Grey's Anatomy TV show universe. Created using Node.js, Express, and MongoDB. Users are able to query the episodes of shows from the GA universe through several parameters. Features documentation and a mobile-first design.
+  `,
+    liveLink: "https://greysanatomyuniverse-api.onrender.com/",
+    githubLink: "https://github.com/wise-guru/greys-anatomy-universe-api"
   },
   {
     title: "Readly",

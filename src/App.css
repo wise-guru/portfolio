@@ -2,13 +2,10 @@ html{
   scroll-behavior:smooth
 }
 
-/* * {
-  outline: 1px solid red;
-} */
-
 :root {
   --blue: #38A3A5;
-  --skills-background: #001143;
+  --blue-background: #001143;
+  --peach: RGB(253,145,102);
 }
 
 body {
@@ -27,7 +24,7 @@ h1, h2, h3 {
 }
 
 body.light {
-  --background-color: white;
+  --background-color: #ffffff;
   --text-color: #000000;
 }
 
@@ -99,7 +96,7 @@ body.dark {
 }
 
 .title-second {
-  color: RGB(253,145,102);
+  color: var(--peach);
   cursor: default;
   animation: 1.25s ease-out 0s 1 color;
 }
@@ -123,7 +120,7 @@ body.dark {
   }
 
   100% {
-    color: RGB(253,145,102);
+    color: var(--peach);
   }
 }
 
@@ -177,7 +174,7 @@ body.dark {
 }
 
 .header .link:hover {
-  color: RGB(253,145,102);
+  color: var(--peach);
   cursor: pointer;
 }
 
@@ -325,7 +322,7 @@ body.dark .fact {
 .skills {
   display: flex;
   flex-direction: column;
-  background-color: var(--skills-background);
+  background-color: var(--blue-background);
   justify-content: center;
   padding: 1rem;
 }
@@ -408,19 +405,6 @@ body.dark .skills-container {
 }
 
 .projects .button-container button {
-  /* background-color: white;
-  color: black;
-  border: 2px solid RGB(253,145,102); /* Peach 
-
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 8px; */
-
-
   border: none;
   color: white;
   padding: 15px 32px;
@@ -434,22 +418,23 @@ body.dark .skills-container {
   background-color: #001143;
 }
 
-.button-container button:hover {
+.projects .button-container button:hover {
+  cursor: pointer;
   background-color: #ffffff;
   color: #001143;
-  outline: 2px solid #001143;
+  border: 2px solid #001143;
 }
 
 body.dark .button-container button {
   background-color: #000000;
-  color: RGB(253,145,102);
-  outline: 2px solid RGB(253,145,102);
+  color: var(--peach);
+  border: 2px solid var(--peach);
 }
 
 body.dark .button-container button:hover {
 color: #000000;
-  background-color: RGB(253,145,102);
-  outline: 2px solid #000;
+  background-color: var(--peach);
+  border: 2px solid #000;
 }
 
 body.dark .project, body.dark .profile, body.dark .text {
@@ -486,6 +471,117 @@ body.dark .project, body.dark .profile, body.dark .text {
   justify-content: end;
   gap: 0.5rem;
 }
+
+/*--------------------------------------------------Contact Form---------------------------------------*/
+.section .subheading {
+  position: relative;
+  width: 100%;
+}
+
+.section .subheading .header-container {
+    margin: 0 auto;
+    max-width: 1500px;
+    text-align: center;
+    width: 100%;
+}
+
+.contact hr {
+  border-right: 0!important;
+  border-left: 0!important;
+}
+
+
+
+.section .subheading .line {
+    border: 1px solid var(--blue-background);
+    opacity: 75%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+}
+
+.section .subheading .section-header {
+  background: var(--background-color);
+  display: inline;
+  font-size: 2.7rem;
+  font-weight: 400;
+  margin: 60px;
+  padding: 0 10px;
+}
+
+body.dark .section .subheading .line {
+  border: 1px solid var(--peach);
+}
+
+
+.section .section-content {
+  padding-top: 50px;
+}
+
+.contact-container {
+  margin: 0 auto;
+  max-width: 500px;
+  padding-bottom: 150px;
+  width: 80%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-form input,
+.contact-form textarea
+ {
+    font-size: 1.3rem;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid rgb(133, 131, 131);
+}
+
+body.dark .contact-form input, 
+body.dark .contact-form textarea {
+  color: #e6e6e6;
+  background: #292c35;
+  border: none;
+  
+}
+
+.contact-form textarea {
+  font-family: inherit;
+  height: 50px;
+  resize: none;
+}
+
+.contact-form .form-button {
+  background: inherit;
+  background: #001143;
+  border: none;
+  color: #e6e6e6;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  transition: border-radius .2s ease-out;
+}
+
+.contact-form .form-button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #001143;
+  outline: 2px solid #001143;
+}
+
+form .button-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+
+
 
 
 /*--------------------------------------------------Footer -------------------------------------------*/
@@ -567,6 +663,7 @@ body.dark .footer {
     align-self: center;
   }
 }
+
 
 @media (min-width: 1024px) {
   .header .row {
@@ -680,5 +777,9 @@ body.dark .footer {
   .project {
     min-height: 300px;
     max-width: 28rem;
+  }
+
+  section.contact {
+    padding-top: 50px;
   }
 }
