@@ -1,4 +1,6 @@
-import ProfilePic from "../assets/hackerman.jpg";
+// import ProfilePic from "../assets/hackerman.jpg";
+// import Vector from "../assets/dev.jpg";
+import Character from "../assets/character.webp";
 import GuitarLight from "../assets/light-mode/guitar-light.png";
 import GuitarDark from "../assets/dark-mode/guitar-dark.png";
 import SkateboardLight from "../assets/light-mode/skateboard-light.png";
@@ -15,7 +17,7 @@ function Profile(props) {
   return (
     <div className="profile">
       <div className="image-box">
-        <img src={ProfilePic}></img>
+        <img src={Character}></img>
       </div>
 
       <div>
