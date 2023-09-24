@@ -11,7 +11,7 @@ function Footer(props) {
         <a href="https://github.com/wise-guru">
           {lightModeOn === "light" ? <GithubLight /> : <GithubDark />}
         </a>
-        <a href="https://www.linkedin.com/in/myla-a-19b4ab174/">
+        <a href="https://www.linkedin.com/in/myla-%E2%80%8E-19b4ab174/">
           {lightModeOn === "light" ? <LinkedInLight /> : <LinkedInDark />}
         </a>
       </div>
